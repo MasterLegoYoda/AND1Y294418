@@ -2,7 +2,12 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray_blueish"
+    android:layout_marginHorizontal="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    >
 
     <TextView
         android:id="@+id/bookTitle"
@@ -11,5 +16,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        />
 </LinearLayout>
