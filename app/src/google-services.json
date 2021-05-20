@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "210711631429",
+    "firebase_url": "https://eternalsuffering-a454e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eternalsuffering-a454e",
+    "storage_bucket": "eternalsuffering-a454e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210711631429:android:0114fa972cdb70e64b752c",
+        "android_client_info": {
+          "package_name": "com.example.and1y294418"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210711631429-4fplq9d9107sb9m3pvouqlinv878llpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgP-S53pJ66hGK8nGAAPx9bRRUkDk_yDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210711631429-4fplq9d9107sb9m3pvouqlinv878llpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

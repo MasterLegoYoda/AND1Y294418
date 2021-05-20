@@ -1,4 +1,4 @@
-package com.example.and1y294418.data;
+package com.example.and1y294418.dataDeprecated;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

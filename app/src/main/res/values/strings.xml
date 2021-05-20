@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">AND1Y294418</string>
+    <string name="app_name">ALIOREADER</string>
+    <string name="loading">loading ...</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_email_and_password_login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="upload_your_image">Upload Your Image</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="i_m_already_a_member">I am already a member.</string>
+    <string name="i_am_a_new_user">I am a New user.</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in_using_email_and_password">Sign In using Email and Password</string>
+    <string name="sign_up_using_email_and_password">Sign Up using Email and Password</string>
+    <string name="best_way_to_invest_your_money">Best way to invest Your Money!</string>
+    <string name="or">Or</string>
+    <string name="logout">LogIn</string>
+    <string name="login">Login</string>
+    <string name="welcom_to_my_app">ALIOREADER</string>
+    <string name="register">Register</string>
+    <string name="title_activity_books">Books List</string>
 </resources>

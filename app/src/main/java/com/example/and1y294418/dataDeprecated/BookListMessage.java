@@ -1,4 +1,4 @@
-package com.example.and1y294418.data;
+package com.example.and1y294418.dataDeprecated;
 
 import java.util.ArrayList;
 import java.util.Arrays;

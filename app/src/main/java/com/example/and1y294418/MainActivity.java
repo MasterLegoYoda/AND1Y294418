@@ -1,44 +1,57 @@
 package com.example.and1y294418;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.DocumentsContract;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.Button;
 
-
-import com.github.barteksc.pdfviewer.PDFView;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class MainActivity extends AppCompatActivity {
+    private Button btnLogin;
+    private Button btnRegister;
+    FirebaseAuth mAuth;
+    FirebaseUser currentUser;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        PDFView pdfView = (PDFView) findViewById(R.id.pdfView);
-        try {
-            FileInputStream fileIn=openFileInput("sample.pdf");
-            pdfView.fromStream(fileIn).enableSwipe(true).swipeHorizontal(true).pageSnap(true).load();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+
+        mAuth = FirebaseAuth.getInstance();
 
 
-        //le comment
+        btnLogin = findViewById(R.id.loginBtn);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLogin = findViewById(R.id.registerBtn);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
-
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if(user != null) {
+            startActivity(new Intent(MainActivity.this,BooksActivity.class));
+            finish();
+        }
+    }
 }
